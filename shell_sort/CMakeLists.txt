@@ -1,7 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+
 project(shell_sort)
 
 include_directories(src)
-include_directories(include)
 
 set(SOURCES
 	src/main.cpp
@@ -9,4 +10,4 @@ set(SOURCES
 	src/sortings.cpp
 )
 
-add_executable($(PROJECT_NAME) ${SOURCES})
+add_executable(shell_sort ${SOURCES})
