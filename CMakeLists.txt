@@ -1,17 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.2...3.27.5)
 
-project(bubble_sort)
+project(shell_sort)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+add_subdirectory(shell_sort)
 
-include_directories(src)
-include_directories(include)
-
-set(SOURCES
-	src/main.cpp
-	src/print.cpp
-	src/sortings.cpp
-)
-
-add_executable(bubble_sort ${SOURCES})
+set(CMAKE_SUPPRESS_REGENERATION true)
